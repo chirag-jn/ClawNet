@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "ClawNet",
+  "description": "An effort to reduce Wildlife Trafficking.",
+  "version": "1.1",
+   
+  "content_scripts": [
+    { "run_at" :"document_end",
+      "matches": ["https://www.ebay.com/sch/i.html?_odkw=yellow+materials&_sop=*", "https://www.ebay.com/sch/i.html?_from=R40&_sacat=0&_nkw=yellow+materials&_sop=*", "https://www.ebay.com/sch/i.html?_odkw=yellow&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR4.TRC1.A0.H0.Xyellow+materials.TRS1&_nkw=yellow+materials&_sacat=0/*", "https://www.ebay.com/itm/Ancient-beast-China-Hunshan-Material-Jade/*"],	  
+      "js": ["jquery-1.11.3.min.js","script.js"],
+	    "css":["css/mycss.css"]
+    }
+  ],
+
+  "browser_action": {
+   "default_icon": "img/MailGet.png"
+  },
+
+  
+  "web_accessible_resources":["img/*.png"]
+}
